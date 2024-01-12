@@ -95,7 +95,7 @@ class ProductManager {
 
 // Test
 (async () => {
-    const productManager = new ProductManager('./src/products.json') // OK
+    const productManager = new ProductManager('./products.json') // OK
     await productManager.initialize()
 
     //Add products

@@ -5,7 +5,7 @@ const port = process.env.PORT || 8080
 
 app.use(express.urlencoded({ extended: true }))
 
-const productManager = new ProductManager('./src/products.json')
+const productManager = new ProductManager('./products.json')
 productManager.initialize()
     .then(() => {
         app.listen(port, console.log(`Server online - Port ${port}`))
